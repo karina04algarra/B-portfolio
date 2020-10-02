@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leisy Algarra</title>
+    <link rel="icon" type="img/ico" href="img/logo.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    </head>
+<body>
+    
+    <!--<style><header>background: yellow;</header</style> otra forma de estilo en linea-->
+    <header class="header" >
+        <!--<header style="color:red; background:blue;"> para estilos en linea-->
+     <div class="container">
+        <figure class="logo">
+            <img src="img/Logo.png" height="80" alt="imagen perdida">
+        </figure>
+        <nav class="menu">
+            <ol> 
+                <li>
+                    <!--para hacer el enlace interno (que me lleva a una parte especifica de la pagina
+                        debo poner #portafolio y crear un id con este mismo nombre
+                        (portafolio)para poder navegar dentro de mi pagina-->
+                    <a href="#portafolio">Portafolio</a>
+                    <!--si quiero ir a otra pagina de mi sitio web (index)debo
+                   darle la ruta completa ejemplo: <a heref="./portafolio/index.html">Portafolio</a> -->
+                </li>
+                <li>
+                    <a href="#exper">Experiencia</a>
+                </li>
+                <li>
+                    <a href="#contacto">Trabajemos Juntos</a>
+                    </li>
+                    
+            </ol>
+        </nav>
+     </div>
+    
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>
+                Hola! soy<strong> Leisy Algarra</strong> <br>Desarrolladora Fronted<br> con <strong> pasión por el aprendizaje  </strong>
+              </h1>
+              <img class="hero-image" src="img/Leisy.jpg"  align="left"  width="300" height="300"> 
+        </div>
+       
+
+    </section>
+    
+    <section id="portafolio" class="portfolio">
+        <div class="container">
+            <h2>Portafolio (proyectos destacados)</h2>
+            <article class="project">
+              <div class="project-details">
+                  <h3 class="project-title">Primer Proyecto</h3>
+                  <h6 class="project-course">Segundo Proyecto</h6>
+                  <p class="project-date"><small><strong>Fecha:</strong>/08/2019</small></p>
+                  <p class="project-url"><small><strong>Puedes verlo en </strong>www.Github.com/Karinaalgarra04</small></p>
+                  <p class="project-description">Estos proyectos me han permitido desarrollar habilidades.</p>
+              </div>
+            <figure class="project-imageContainer">
+            <img class="project-image" src="img/spkinspanish.png" width="300">
+            </figure>
+            </article>
+        </div>
+
+    </section>
+    <div class="container">
+        <h2 class="event-list-title" id="exper">Más sobre mi experiencia</h2>
+    </div>
+    
+    <section id="eventos" class="event-list">
+        <div class="container">
+        <article class="event" >
+           <figure class="event-imageContainer">
+               <img class="event-image" src="img/img1.jpeg" width="300">
+           </figure>
+           <div class="event-detail">
+            <h3 class="event-title">Spkinspanish</h3>
+            <p class="event-description">Estos videos hacen parte de la estrategia de marketing para mi emprendemiento en Spkinspanish. </p>
+            <a class="event-url" href="https://www.youtube.com/channel/UCuUTEzRy383sgcsD7Y8FLWw/featured" target="_blank">Ir al canal en youtube</a>
+           </div> 
+        </article>
+
+        <article class="event" >
+            <figure class="event-imageContainer">
+                <img class="event-image" src="img/img2.jpeg" width="300">
+            </figure>
+            <div class="event-detail">
+             <h3 class="event-title">Spkinspanish</h3>
+             <p class="event-description">Estos videos hacen parte de la estrategia de marketing para mi emprendemiento en Spkinspanish. </p>
+             <a class="event-url" href="https://www.youtube.com/watch?v=-B_pNewVQzU" target="_blank">Ir al canal en youtube</a>
+             </div> 
+        </article>
+
+         <article class="event" >
+            <figure class="event-imageContainer">
+                <img class="event-image" src="img/img3.jpeg" width="300">
+            </figure>
+            <div class="event-detail">
+             <h3 class="event-title">Spkinspanish</h3>
+             <p class="event-description">Estos videos hacen parte de la estrategia de marketing para mi emprendemiento en Spkinspanish. </p>
+             <a class="event-url" href="https://www.youtube.com/watch?v=-B_pNewVQzU" target="_blank">Ir al canal en youtube</a>
+             </div> 
+         </article>
+
+         <article class="event" >
+            <figure class="event-imageContainer">
+                <img class="event-image" src="img/img4.jpeg" width="300">
+            </figure>
+            <div class="event-detail">
+             <h3 class="event-title">Spkinspanish</h3>
+             <p class="event-description">Estos videos hacen parte de la estrategia de marketing para mi emprendemiento en Spkinspanish. </p>
+             <a class="event-url" href="https://www.youtube.com/watch?v=-B_pNewVQzU" target="_blank">Ir al canal en youtube</a>
+            </div> 
+          </article>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <form action="/Suscripcion/" class="form-email">
+                <h3 >¿creamos algo juntos?</h3>
+                <!-- <label for="email">Dejame tu email</label> coloca texto que quiero que se vea en el frente o lo trabajo con id para que sea predictivo-->
+                <!--value="@gmail.com" cuando coloque este atributo desaparecerá el placeholder-->
+                <input type="text" placeholder="Déjame tu email" id="email">
+                <!-- <input type="submit"value="enviar"> otra forma de hacer el botón de envio -->
+                <button>Enviar</button>
+    
+            </form>
+            <div class="social">
+                <a href="https://twitter.com/LeisyAlgarra" class="social-link twitter"></a>
+                <a href="https://www.facebook.com/karina.algarrafernandez" class="social-link facebook"></a>
+                <a href="https://github.com/karina04algarra" class="social-link github"></a>
+                <a href="https://www.instagram.com/spkinspanish/?hl=es-la" class="social-link instagram"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <p>Curso de Desarrollo web online 2020</p>
+            </div>
+            <div>
+                <p>
+                  Designed with love by Leisy Karina Algarra  
+                </p>
+                <a href="https://github.com/karina04algarra" class="social-link github"></a>
+                <a href="https://www.instagram.com/spkinspanish/?hl=es-la" class="social-link instagram"></a>
+            </div>
+    
+        </div>
+    </footer>
+</body>
+</html>

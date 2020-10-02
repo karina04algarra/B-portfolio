@@ -1,0 +1,397 @@
+    /* reglas conformada por selectores,declaraciones,propiedades y valores
+    selectores: como identificar elemento html
+    declaraciones:todo lo que se hace con un selector 
+    propiedades: son cosas particulares que se pueden hacer con ese elemento
+    valores: actuan como variable */
+/*header{
+    background: pink;
+    color: yellow;/*
+}
+/*
+declaración:todo lo que está dentro de las llaves
+propiedad:background
+ valor:pink (todo lo anterior conforma una regla de css)*/
+
+ /* selector de etiqueta header-section-article-nav 
+  selector descendente: 
+ body header div nav ol li a { } 
+ selector de clase: (punto).link
+ selector de id: #portafolio */
+ /* gris osciro = #1d252c*/
+ /*gris claro = #626262*/
+ /*background gris = #1b2127 */
+ /* celeste= #026fff */
+
+ body
+ {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+ 
+ }
+ .logo
+ {
+  display: flex;
+  margin-block-start: 60px;
+ }
+
+ ol,
+ ul
+ {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ }
+
+ figure
+ {
+  margin: 0;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6
+ {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;/* hace referencia a letra gruesa o delgada*/
+  /*font-style: italic; esto hace referencia a cursiva, italica etc*/
+ }
+
+h1
+{
+  font-size: 40px;  
+  line-height: 1em;
+  letter-spacing:-.2px ;/*da espacio entre las letras*/
+  /*text-transform: uppercase;uppercase=todas las letras mayusculas lowercase=todas las letras minuscula
+  capitalize= solo las primeras letras de cada palabra en mayuscula*/
+  color:white;
+  /* margin: top right bottom left;es el orden para tamaños, como manecillas del reloj */
+  /* margin:100px 150px 70px 30px; */
+  margin: 0;
+}
+
+h1 strong
+{
+  color: #026fff; 
+}
+
+h2
+{
+  color:#026fff ;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+  
+
+}
+
+
+.hero
+{
+  height: 300px;
+  /* background-image: url(img/kari.jpeg); */
+  background-color: #1b2127;
+  /* background-size: 400px 280px;
+  background-repeat: no-repeat ;
+  background-position-x:right ; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+
+}
+
+.hero-image
+{
+  object-fit: cover;
+  object-position: top;
+}
+
+
+.portfolio
+{
+  background:#fafafa;
+  padding: 20px;
+}
+
+.project
+
+{
+  /* border-top: 10px solid red; tamaño,tipo y color de borde*/
+  /*color: blue;
+  border-style: solid;
+  border-width: 15px;
+   de esta forma se hace individual*/
+  border:1px solid gray;
+  border-radius: 10px;
+  /* margin: 10px; */
+  margin-bottom: 15px;
+  /* padding es verde, margin es naranja en el inspector */
+  padding: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-course,
+.project-date,
+.project-url
+{
+  margin:10px 0 ;
+}
+
+.project-description
+{
+  font-size: 20px;
+}
+
+.project strong
+{
+  font-family:'Fjalla One', sans-serif;
+}
+
+.project-title
+{
+  font-size:30px ;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.project-details
+{
+  width: 500px;
+}
+
+.project-imageContainer
+{
+  width: 500px;
+}
+
+.menu
+{
+  height: inherit;
+}
+
+.header ol
+{
+  display: flex;
+  height: inherit;
+}
+
+.header ol li
+{
+  height: inherit;
+}
+
+.header
+{
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+
+.header ol
+{
+  display: flex;
+}
+
+.header a
+{
+color: white;
+text-decoration: none;
+height: inherit;
+display: flex;
+align-items: center;
+padding: 0 10px;
+
+
+}
+
+.flexbox
+{
+ display:flex;
+ /* flex-wrap: wrap;cuando ya no cabe un elemento en el ancho designado, los elementos
+ van a ir cayendo(no se vera amontonado)*/
+ 
+ /* flex-direction: column;muestra el contenido en columna */
+}
+
+.box
+{
+  width: 200px;
+  height: 200px;
+  border:1px solid red ;
+  /* flex-shrink: 0;hace que los elementos conserven tamaño  indicado
+   de ancho y alto, no se encoje */ 
+  margin: 20px;
+}
+
+.footer
+{
+  background-color:#1b2127 ;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-list
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.event-list-title
+{
+  margin-left: 20px;
+}
+
+.event
+{
+  /* border: 1px solid red; */
+  margin:10px;
+  width: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #f4fbff;
+}
+
+.event img
+{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.event-detail
+{
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative;
+  padding: 20px;
+  /* text-align: left; */
+}
+
+.event-description
+{
+  text-align: left;
+}
+
+.event-url
+{
+  color: #056fff;
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+
+}
+
+.contact
+{
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .social
+{
+ 
+} */
+
+.social-link
+{
+  display:inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size: 50px 50px;
+}
+
+.social-link.twitter
+{
+  background-image: url('img/twitter.svg');
+
+}
+
+.social-link.facebook
+{
+  background-image: url('img/facebook.svg');
+
+}
+
+.social-link.github
+{
+  background-image: url('img/github.svg');
+
+}
+
+.social-link.instagram
+{
+  background-image: url('img/instagram.svg');
+
+}
+
+.form-email input
+{
+  border-color: gray;
+  border-radius:5px;
+  border-style: solid;
+  padding: 10px 20px 10px 25px;
+  background-image: url('img/envelope.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-y: 5px;
+}
+
+.form-email
+{
+  display: block;
+  margin-top: 10px;
+  background: transparent;
+  color:white;
+  padding:10px 0;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+
+}
+
+.form-email h3
+{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container
+{
+  /* border: 1px solid red; */
+  width: 1000px;
+  margin: 0 auto;
+  display:inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+
+}
+
+
+
+
+
+
+
